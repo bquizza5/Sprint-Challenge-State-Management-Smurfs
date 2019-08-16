@@ -10,10 +10,13 @@ const App = (props) => {
  
     return (
       <div className="App">
-        <button onClick={() => console.log(props.state)}>get state</button>
+        <button onClick={() => console.log(props.state)}>console.log(state)</button>
         <button onClick={props.getSmurfs}>fetch smurfs</button>
-        <Smurfs />
         <AddSmurf />
+        <h1>Smurfs:</h1>
+        <div className='smurfs'>
+          <Smurfs />
+        </div>
       </div>
     );
   }
